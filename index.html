@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Architecture</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js"></script>
+  
+    <script type="module" src="js/main.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="conteiner">
+        
+        <div id="map" class="map loading"></div>
+        
+        <div id="filter"> 
+
+            <h3 class="h_filter" id="header_filter"> Search a vessel in a specific area </h3>
+
+            <div id="parameters">
+                <p class="p_filter" id="mmsi_filter"> MMSI </p>
+
+                <input class="t_filter" id="mmsi_text" type="text" >
+
+                <p class="p_filter" id="imo_filter"> IMO </p>
+
+                <input class="t_filter" id="imo_text" type="text" >
+
+                <p class="p_filter" id="name_filter"> NAME (or part of the name) </p> 
+
+                <input class="t_filter" id="name_text" type="text" > 
+            </div>
+      
+            <div id="buttons_filter" >
+
+                <button class="b_filter" id="b_cancel"> CANCEL </button>
+
+                <button class="b_filter" id="b_filter"> FILTER </button>
+
+            </div> 
+        </div>
+    </div>
+
+</body>
+</html>
