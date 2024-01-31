@@ -129,10 +129,10 @@ class DataModel {
           break; 
       }
       i++
-      // if the search is negative, an alert() informs the user
-      if (counter == 0){
-        alert( 'The vessel '+ keyword + ' is not found in the designed area');
-      }
+    }  
+    // if the search is negative, an alert() informs the user
+    if (counter == 0){
+      alert( 'The vessel '+ keyword + ' is not found in the designed area');
     }
   }
 
